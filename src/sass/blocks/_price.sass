@@ -15,7 +15,7 @@
         display: grid
         justify-content: space-between
         align-content: space-between
-        grid-template: 21px 18px / 65% 35%
+        grid-template: 21px 18px / repeat(2, auto)
         gap-rows: 5px
         &::before
             content: ''
@@ -27,7 +27,7 @@
             border-radius: 100%
             background-color: $main-color
         &-price
-            text-align-last: right
+            justify-self: end
         &-descr
             grid-row: 2/3
             grid-column: 1/3
