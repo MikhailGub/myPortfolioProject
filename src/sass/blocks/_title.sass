@@ -18,3 +18,13 @@
         font-size: 48px
         span
             color: $main-color
+    &__section-title
+        text-align: center
+        @include before-circle
+        position: relative
+        &:before
+            top: -6px
+            left: 50%
+            transform: translateX(-50%)
+    &__section-subtitle
+        text-align: center
