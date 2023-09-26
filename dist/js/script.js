@@ -24,4 +24,10 @@ document.addEventListener('keydown', function(event) {
 function hideContent () {
     menu.classList.remove('active')
 }
-  
+ 
+const procent = document.querySelectorAll('.scale__procent')
+    line = document.querySelectorAll('.scale__line-front')
+
+procent.forEach( (item, i) => {
+    line[i].style.width = item.innerHTML;
+});
