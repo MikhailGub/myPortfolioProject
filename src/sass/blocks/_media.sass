@@ -21,13 +21,19 @@
         &__wrapper
             padding: 40px 10px 0 10px
             column-gap: 90px
+    .skills
+        padding-top: 90px
+        &__body
+            grid-template: repeat(2,270px)/repeat(3,270px)
+            gap: 20px
+            justify-content: center
 
 @media (max-width: 992px) 
     .container
         max-width: 720px 
-        .title
-            &_fz36
-                font-size: 30px 
+    .title
+        &_fz36
+            font-size: 30px 
     .about
         padding-top: 70px
         &__wrapper
@@ -43,6 +49,19 @@
         &__wrapper
             column-gap: 70px
             grid-template-columns: repeat(2,315px)
+    .skills
+        padding-top: 70px
+        &__divider
+            margin-bottom: 40px
+        &__body
+            grid-template: repeat(3, auto)/repeat(3,230px)
+            gap: 13px
+        &__elem
+            padding: 26px 24px 20px 25px
+    .scale
+        padding-top: 70px
+        &__wrapper
+            grid-template-columns: repeat(2, 1fr)
 
 @media (max-width: 768px)
     .container
@@ -65,7 +84,19 @@
         &__skill
             grid-template-columns: 40px 200px
             column-gap: 20px
-        
+    .resume
+        padding-top: 40px
+        &__wrapper
+            padding: 0
+            grid-template-columns: 1fr
+        &__col
+            margin-top: 40px
+    .skills
+        padding-top: 40px
+        &__body
+            grid-template: repeat(3, auto) / repeat(2, 1fr)
+    .scale
+        padding-top: 40px
 
 @media (max-width: 576px)  
     .container
@@ -76,6 +107,9 @@
             font-size: 28px
         &_fz36
             font-size: 24px
+            line-height: 36px
+        &__section-subtitle
+            margin-top: 20px
     .hamburger
         right: 20px
     .menu
@@ -89,4 +123,26 @@
         &__wrapper
             grid-template: 340px auto auto / 1fr
         &__skills
+            grid-template-columns: 1fr
+    .resume
+        &__divider
+            margin: 15px auto 0 auto
+        &__col 
+            ul
+                li
+                    &::after
+                        top: -8px
+                        height: calc(100% + 8px)
+            &-title
+                margin-bottom: 0
+    .skills
+        &__divider
+            margin: 15px auto 20px auto
+        &__body
+            grid-template: 270px / 270px
+            gap: 20px
+        &__elem
+            padding: 30px 29px 25px 30px
+    .scale
+        &__wrapper
             grid-template-columns: 1fr
